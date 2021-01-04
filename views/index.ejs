@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cálculo de Conversão de Moedas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Conversor de Moedas</h5>
+                <form action="/calcular" method="POST">
+                    <div class="form-group">
+                        <label for="cotacaoDolar">Cotação do dolar (U$)</label>
+                        <input id="cotacaoDolar" type="number" step="any" name="cotacaoDolar" value="<%=cotacaoDolar%>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="cotacaoEuro">Cotação do euro (&euro;)</label>
+                        <input id="cotacaoEuro" type="number" step="any" name="cotacaoEuro" value="<%=cotacaoEuro%>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="montanteReais">Montante em reais (R$)</label>
+                        <input id="montanteReais" type="number" step="1" name="montanteReais" value="<%=montanteReais%>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="montanteDolar">Montante em dolar (U$)</label>
+                        <input id="montanteDolar" type="number" name="montanteDolar" value="<%=montanteDolar%>" 
+                               class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="montanteEuros">Montante em euros (&euro;)</label>
+                        <input id="montanteEuros" type="number" name="montanteEuros" value="<%=montanteEuros%>" 
+                               class="form-control" readonly>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Calcular">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
